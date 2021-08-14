@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.container {
+    border: 10px groove rgb(14, 8, 71);
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(17, 16, 16, 0.459), rgba(7, 5, 39, 0.445)), url('./IMG_20200315_143528_145.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu{
+    position: fixed;
+    top: -100px;
+    right: -100px;
+    width: 200px;
+    line-height: 200px;
+    font-size: 20px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(40, 3, 65, 0.671);
+}
+.menu a{
+    position: relative;
+    top: 40px;
+    left: 20px;
+    text-decoration: none;
+    color: burlywood;
+}
+.menu a:hover{
+   text-shadow: 0 0 50px black;
+   color: chocolate;
+}
+.graph{
+    float: left;
+    width: calc(100% - 200px);
+}
+.info{
+    border-left: 10px groove rgba(6, 3, 49, 0.699);
+    height: 100vh;
+    padding-top:100px ;
+    float: right;
+    width: 200px;
+    color: beige;
+    text-align: center;
+}
+.info>p {
+    padding: 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.info>div>p{
+    padding: 8px;
+}
+.info>div>input{
+    height: 30px;
+    padding: 4px 20px;
+    color: rgb(5, 2, 41);
+}
+.graph{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info button{
+    width: 100px;
+    height: 40px;
+    margin: 20px 0 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.897);
+transition: all 0.8s linear;
+}
+.info button:hover{
+    border-color: blanchedalmond;
+    color: blanchedalmond;
+background-color: rgba(0, 0, 0, 0.164);
+}
